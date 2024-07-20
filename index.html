@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attendance Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Attendance Portal</h1>
+        <form id="attendance-form">
+            <label for="student-name">Student Name:</label>
+            <input type="text" id="student-name" required>
+
+            <label for="student-id">Student ID:</label>
+            <input type="text" id="student-id" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+
+            <label for="status">Status:</label>
+            <select id="status" required>
+                <option value="Present">Present</option>
+                <option value="Absent">Absent</option>
+                <option value="Late">Late</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+        <table id="attendance-table">
+            <thead>
+                <tr>
+                    <th>Student Name</th>
+                    <th>Student ID</th>
+                    <th>Date</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Attendance records will be inserted here -->
+            </tbody>
+        </table>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
